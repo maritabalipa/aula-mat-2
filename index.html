@@ -14,13 +14,21 @@
 <body>
     <header class=" p-5">
 
-        <nav class="container d-flex justify-content-between align-items-center">
-            <img src="img/logo.png" alt="Logotipo da Tropicália" class="nav-img " loading="lazy">
+        <nav class="container d-flex justify-content-between align-items-center" >
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf9_TcF2cgAhYp9eQKKKrVLIGnwbdgUuZRDZmlIDN18P_tAnjlzq6f7JSRvLFPSGkElxM&usqp=CAU" class="IMG" loading="lazy">
             <ul class="nav mt-5">
                 <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
                 <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-            </ul>          
+            </ul>
+            <div id="acessibilidade" class="menu-acessibilidade"> 
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>         
+                </div>
+            </div>
         </nav>
        
     </header>
@@ -31,45 +39,54 @@
         <section id="inicio" class="my-5">
             <div class="inicio-fundo d-flex justify-content-between align-items-center">
                 <div class="esquerda-conteudo">
-                    <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
-                    <img src="img/logo-2.png" alt="Logotipo secundário da Tropicália" class="mb-3" width="563"
+                    <h1 class="display-4 text-white fst-italic fw-bold">CONHEÇA A MARCA MARI MARIA</h1>
+                    <img src="https://res.cloudinary.com/beleza-na-web/image/upload/f_auto,fl_progressive,q_auto:best/v1/brand/2021_07_06_15_16_34_1/e0b6277f-ec53-43e5-b982-f39d86961829-marca-marimaria-make-up-carrossel.svg" class="mb-3" width="563"
                         height="278" loading="lazy">
                     <a href="#tropicalia"
-                        class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero
-                        conhecer!</a>
+                        class="btn btn-primary btn-lg botao-inicio fw-semibold">QUERO
+                      COMPRAR!</a>
                 </div>
+                <img src="https://static.stealthelook.com.br/wp-content/uploads/2024/10/mari-maria-makeup-lancamento-ladhup-cilios-20241018224057.jpg" alt="A imagem apresenta o grupo musical Os mutantes, sao tres pessoas cantando em um microfone" title="Os mutantes - CC0 Domínio Público / Acervo Arquivo Nacional" class="img-fluid img-inicio">
 
-            </div>
+              </div>
         </section>
 
-        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
+        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" tabindex="0" aria-label="Seção explicativa sobre a tropicália">
             <div class="container d-flex align-items-center ">
-                  <div class="col-5">
-                    <h2>O que foi a Tropicália?</h2>
-                    <p class="p-2">A Tropicália, também conhecida como Tropicalismo, foi um movimento cultural
-                        brasileiro que surgiu na década de 1960, tendo seu auge entre 1967 e 1968. Esse movimento
-                        abrangeu várias expressões artísticas, como a música, o cinema, o teatro e as artes plásticas, e
-                        teve como principal característica a mistura de elementos da cultura brasileira tradicional com
-                        influências estrangeiras, especialmente do rock e da música pop.</p>
+                <div class="col-4 d-flex justify-content-center ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVfHxlTojuAwZSNUelUg1ucIVR2lN-aOWuMw&s" class="rounded-pill" width="273" height="331" loading="lazy">
+                </div>
+                <div class="col-5">
+                    <h2>Quem é Mari Maria?</h2>
+                    <p class="p-2">Mari Maria ficou famosa por produzir conteúdo de maquiagem no YouTube e viralizar por suas transformações. Hoje, ela é uma empresária e influenciadora digital que comanda a marca de cosméticos MARIMARIAMAKEUP. </p>
                 </div>
             </div>
         </section>
 
-        <section id="galeria">
-            <h2 class="text-center pt-5">Galeria</h2>
+        <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
+            <h2 class="text-center pt-5">Maquiagens mais populares</h2>
             <div class="container p-3 mt-3 fundo-galeria ">
 
                 <div class="row justify-content-md-center">
                     <div class="col-md-4">
-                        <img src="img/lossy-page1-640px-Jorge_Ben_e_o_Trio_Mocotó_no_Teatro_da_Lagoa,_1971.tif.jpg"
+                        <img src="https://cdn.awsli.com.br/400x400/1794/1794814/produto/290008902/1f8583dedfe7af5b786d302983e20148-q49twd783f.jpg"
                             class="img-fluid rounded-5" loading="lazy">
                     </div>
                     <div class="col-md-4">
-                        <img src="img/lossy-page1-640px-Os_Mutantes_2.tif.jpg" class="img-fluid rounded-5"
+                        <img src="https://cdn.awsli.com.br/600x450/2752/2752602/produto/280824745/647430-0-cbf8u34eqf.jpg"
                             loading="lazy">
                     </div>
                 </div>
-            </div>
+                <div class="row mt-4  justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="https://cdn.sistemawbuy.com.br/arquivos/cad5cc7133685cdd8d0d7880d11cba96/produtos/66929d4400251/corretivo-cover-up-mari-maria-15-z1qd90lkqn-66929da0a4b3b.jpg" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_800/v1/imagens/product/20056321/bb94767c-1e9c-4493-b614-230eb19ecefe-20056321-mari-maria-kit-ginger-stick-33g.png"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                </div>
+             </div>
         </section>
 
         <section id="contato">
@@ -93,7 +110,7 @@
                                 placeholder="Escreva sua mensagem"></textarea>
                         </div>
                         <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao">Enviar
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar
                                 mensagem</button>
                         </div>
                     </form>
@@ -108,8 +125,9 @@
         <i class="bi bi-tiktok"></i>
         <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
     <script src="script.js"></script>
-
+  
 </body>
 
 </html>
